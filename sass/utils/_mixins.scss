@@ -1,0 +1,9 @@
+@mixin flex($type: flex, $x: center, $y: center) {
+  display: $type;
+  justify-content: $x;
+  align-items: $y;
+}
+
+@mixin transition($property) {
+  transition: $property $duration $timing-function;
+}
