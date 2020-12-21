@@ -19,6 +19,18 @@ body {
   background-color: $primary-color;
 }
 
+.background-img {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("../images/bg/bg-img-01.jpg");
+  // background-repeat: no-repeat;
+  background-position: center;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
