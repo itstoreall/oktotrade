@@ -1,0 +1,33 @@
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $primary-black-color-07;
+}
+
+.header-logo__link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .header-logo__icon {
+    width: 160px;
+  }
+}
+
+.header-tel__link {
+  display: flex;
+  align-items: center;
+
+  .header-tel__icon {
+    width: 15px;
+    height: 20px;
+    fill: $accent-color;
+  }
+
+  & span {
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 1;
+  }
+}

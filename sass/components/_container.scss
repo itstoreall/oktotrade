@@ -1,3 +1,11 @@
+// Container Header
+
+.container.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 // Container
 
 .container {
@@ -21,8 +29,6 @@
 }
 
 // Container Footer
-
-// Media 768px
 
 @media screen and (min-width: 768px) {
   .container.footer {
