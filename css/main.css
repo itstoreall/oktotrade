@@ -27,7 +27,7 @@ body {
   z-index: -1;
   width: 100%;
   height: 100vh;
-  background-image: url("../images/bg/bg-img-01.jpg");
+  background-image: url("../images/bg/bg-img-02.jpg");
   background-position: center;
 }
 
@@ -224,6 +224,7 @@ button {
 .product-item__link {
   display: block;
   text-decoration: none;
+  background-color: #171b1d;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -294,9 +295,6 @@ button {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .product-item__meta .product-item__meta-title {
@@ -306,7 +304,7 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
-  color: skyblue;
+  color: #dddddd;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -315,9 +313,9 @@ button {
 .product-item__meta .product-item__meta-text {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.87;
-  color: #ffffff;
+  color: #747474;
 }
 
 @media screen and (min-width: 768px) {
@@ -351,7 +349,7 @@ button {
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #2f303a;
+  background-color: #171b1d;
 }
 
 @media screen and (max-width: 767px) {
@@ -437,136 +435,6 @@ button {
   background-color: #8f6d4f;
 }
 
-@media screen and (max-width: 767px) {
-  .mailing {
-    width: 100%;
-  }
-}
-
-.mailing .mailing-input {
-  padding-left: 16px;
-  padding-right: 12px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #ffffff;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-}
-
-@media screen and (max-width: 1199px) {
-  .mailing .mailing-input {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
-.mailing .mailing-input::-webkit-input-placeholder {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.mailing .mailing-input:-ms-input-placeholder {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.mailing .mailing-input::-ms-input-placeholder {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.mailing .mailing-input::placeholder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.mailing .mailing-input:focus::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-.mailing .mailing-input:focus:-ms-input-placeholder {
-  opacity: 0;
-}
-
-.mailing .mailing-input:focus::-ms-input-placeholder {
-  opacity: 0;
-}
-
-.mailing .mailing-input:focus::placeholder {
-  opacity: 0;
-}
-
-.mailing .mailing-submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 10px;
-  padding-right: 28px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  background-color: #8f6d4f;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.mailing .mailing-submit::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  background-image: url("../images/footer/mailing-icon.svg");
-}
-
-@media screen and (min-width: 768px) {
-  .page-footer .mailing {
-    width: 450px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .page-footer .contacts {
     width: 231px;
@@ -574,24 +442,6 @@ button {
   }
   .page-footer .join {
     margin-right: 94px;
-  }
-  .mailing {
-    width: 570px;
-  }
-  .mailing .mailing-form {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .mailing .mailing-form .mailing-input {
-    width: 358px;
-    margin-right: 12px;
   }
 }
 /*# sourceMappingURL=main.css.map */

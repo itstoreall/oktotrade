@@ -13,6 +13,7 @@
 .product-item__link {
   display: block;
   text-decoration: none;
+  background-color: $primary-black-color;
   @include transition(box-shadow);
 
   &:hover {
@@ -78,9 +79,9 @@
   padding-bottom: 20px;
   padding-left: 24px;
 
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  // border-left: 1px solid #eeeeee;
+  // border-right: 1px solid #eeeeee;
+  // border-bottom: 1px solid #eeeeee;
 
   .product-item__meta-title {
     margin-top: 0;
@@ -89,7 +90,7 @@
     line-height: 2;
     letter-spacing: 0.06em;
     text-align: left;
-    color: skyblue;
+    color: $primary-grey-color;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -98,9 +99,9 @@
   .product-item__meta-text {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.87;
-    color: $primary-text-color;
+    color: $secondary-grey-color;
   }
 }
 
