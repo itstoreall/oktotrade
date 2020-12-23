@@ -33,24 +33,22 @@
 
 // Sectin Hero
 
-.hero-section {
-  height: 100vh;
+.section.hero {
   width: 100%;
-  padding-top: 180px;
-  // text-align: center;
-  // background-color: $primary-text-color;
+  padding-top: 25px;
+  padding-bottom: 40px;
   background-image: linear-gradient(
     to right,
     rgba(47, 48, 58, 0.8),
     rgba(47, 48, 58, 0.8)
   );
-  //   url("../images/bg/bg-img-01.jpg");
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center;
+
+  // @media screen and (min-width: 768px) {
+  //   font-size: 40px;
+  // }
 }
 
-// @media screen and (min-device-pixel-ratio: 2),
+// @media scre  en and (min-device-pixel-ratio: 2),
 //   screen and (min-resolution: 192dpi),
 //   screen and (min-resolution: 2dppx) {
 //   .hero-section {

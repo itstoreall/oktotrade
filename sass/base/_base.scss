@@ -15,7 +15,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: 0.03em;
-  color: $primary-text-color;
+  color: $primary-white-text-color;
   background-color: $primary-black-color;
 }
 
@@ -28,7 +28,7 @@ body {
 
   background-image: url("../images/bg/bg-img-02-mob.jpg");
   background-repeat: no-repeat;
-  // background-size: cover;
+  background-size: cover;
   background-position: center;
   // background-attachment: fixed;
 

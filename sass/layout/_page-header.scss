@@ -1,13 +1,18 @@
 .page-header {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  background-color: $primary-black-color-07;
+  background-color: $primary-black-color-09;
 }
+
+// logo
 
 .header-logo__link {
   display: block;
+  opacity: 0.8;
+  @include transition(opacity);
+
+  &:hover {
+    opacity: 1;
+  }
 
   @media screen and (max-width: 359px) {
     margin-bottom: 20px;
@@ -16,16 +21,27 @@
 
   @media screen and (min-width: 360px) {
     padding-top: 15px;
-    // padding-left: 2px;
     padding-bottom: 15px;
     width: 130px;
   }
 
   @media screen and (min-width: 768px) {
-    padding-left: 5px;
     width: 180px;
+
+    @media screen and (max-width: 1199px) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+
+  @media screen and (orientation: landscape) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 130px;
   }
 }
+
+// Tel
 
 .header-tel__link {
   display: flex;
@@ -35,6 +51,7 @@
     width: 11px;
     height: 17px;
     fill: $accent-color-lighter;
+    @include transition(fill);
 
     @media screen and (min-width: 360px) and (max-width: 374px) {
       display: none;
@@ -44,6 +61,13 @@
       width: 15px;
       height: 20px;
     }
+
+    @media screen and (orientation: landscape) {
+      @media screen and (min-width: 1200px) {
+        width: 11px;
+        height: 17px;
+      }
+    }
   }
 
   & span {
@@ -51,41 +75,43 @@
     margin-left: 10px;
     font-size: 17px;
     color: $accent-text-color-lighter;
+    @include transition(color);
 
     @media screen and (min-width: 360px) {
       padding-top: 1px;
-      padding-right: 2px;
-      // margin-left: 7px;
       font-size: 18px;
     }
 
     @media screen and (min-width: 768px) {
       padding-top: 2px;
-      padding-right: 15px;
-      // margin-left: 10px;
       font-size: 20px;
     }
 
-    // @media screen and (min-width: 360px){
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-right: 15px;
+    }
 
-    // }
+    @media screen and (orientation: landscape) {
+      padding-right: 10px;
+
+      @media screen and (min-width: 1200px) {
+        padding-top: 1px;
+        font-size: 16px;
+      }
+    }
   }
 
-  //   @media screen and (min-width: 350px) and (max-width: 374px) {
-  //     display: none;
-  //   }
-  // }
+  &:hover > .header-tel__icon {
+    fill: $primary-white-text-color;
+  }
 
-  // @media screen and (min-width: 350px) {
-  //   display: flex;
-  //   align-items: center;
-  //   color: $accent-text-color-lighter;
-
-  // }
+  &:hover > span {
+    color: $primary-white-text-color;
+  }
 }
 
-.header-tel__icon {
-  width: 12px;
-  height: 17px;
-  fill: $accent-color-lighter;
-}
+// .header-tel__icon {
+//   width: 12px;
+//   height: 17px;
+//   fill: $accent-color-lighter;
+// }

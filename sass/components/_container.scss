@@ -20,6 +20,15 @@
   }
 }
 
+.container.header,
+.container.hero,
+.container.products {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 // Container Header
 
 .container.header {
@@ -28,16 +37,43 @@
 
   @media screen and (max-width: 359px) {
     flex-direction: column;
-    // align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
   @media screen and (min-width: 360px) {
     justify-content: space-between;
-    // align-items: center;
+  }
+
+  @media screen and (orientation: landscape) {
+    @media screen and (min-width: 768px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
   }
 }
+
+// Container Hero
+
+// .container.hero {
+//   @media screen and (min-width: 768px) {
+//     padding-left: 30px;
+//     padding-right: 30px;
+//   }
+// }
+
+// Container Products
+
+// .container.products {
+//   @media screen and (min-width: 768px) {
+//     padding-left: 30px;
+//     padding-right: 30px;
+//   }
+// }
 
 // Container Footer
 
