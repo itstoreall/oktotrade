@@ -1,11 +1,3 @@
-// Container Header
-
-.container.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 // Container
 
 .container {
@@ -25,6 +17,25 @@
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+  }
+}
+
+// Container Header
+
+.container.header {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 359px) {
+    flex-direction: column;
+    // align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 360px) {
+    justify-content: space-between;
+    // align-items: center;
   }
 }
 

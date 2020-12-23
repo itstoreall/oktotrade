@@ -19,18 +19,22 @@ body {
   background-color: $primary-black-color;
 }
 
-.background-img {
+.background {
   position: fixed;
   top: 0;
   z-index: -1;
   width: 100%;
-  // height: 100vh;
+  height: 100vh;
 
-  // background-image: url("../images/bg/bg-img-02.jpg");
-  // background-repeat: no-repeat;
+  background-image: url("../images/bg/bg-img-02-mob.jpg");
+  background-repeat: no-repeat;
   // background-size: cover;
-  // background-position: center;
+  background-position: center;
   // background-attachment: fixed;
+
+  @media screen and (min-width: 768px) {
+    background-image: url("../images/bg/bg-img-02.jpg");
+  }
 }
 
 .visually-hidden {
