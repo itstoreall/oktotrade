@@ -49,7 +49,7 @@
   // icon
   .header-tel__icon {
     width: 14px;
-    height: 22px;
+    height: 18px;
     fill: $accent-color-lighter;
     @include transition(fill);
 
@@ -58,13 +58,13 @@
     }
 
     @media screen and (min-width: 375px) {
-      width: 12px;
-      height: 18px;
+      width: 10px;
+      height: 15px;
     }
 
     @media screen and (min-width: 768px) {
-      width: 15px;
-      height: 20px;
+      width: 14px;
+      height: 18px;
     }
 
     @media screen and (orientation: landscape) {
@@ -77,25 +77,25 @@
 
   // namber
   & span {
-    padding-top: 2px;
+    // padding-top: 2px;
     margin-left: 10px;
     font-size: 20px;
     color: $accent-text-color-lighter;
     @include transition(color);
 
     @media screen and (min-width: 360px) {
-      padding-top: 1px;
-      font-size: 18px;
+      // padding-top: 1px;
+      // font-size: 18px;
     }
 
     @media screen and (min-width: 375px) {
-      padding-top: 1px;
+      // padding-top: 1px;
       font-size: 18px;
       margin-left: 7px;
     }
 
     @media screen and (min-width: 768px) {
-      padding-top: 2px;
+      padding-top: 1px;
       font-size: 20px;
     }
 

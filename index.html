@@ -15,8 +15,8 @@
    <header class="page-header">
       <div class="container header">
 
-         <a href="./index.html" class="header-logo__link"><img class="header-logo__icon"
-               src="./images/svg/logo-okto-trade-white.svg" alt="Логотип ТД ОКТО ТРЕЙД" aria-label="Логотип ТД ОКТО ТРЕЙД"></a>
+         <a href="./index.html" class="header-logo__link"><img 
+               src="./images/svg/logo-okto-trade-white.svg" alt="окто трейд" aria-label="окто трейд"></a>
 
          <a class="header-tel__link link" href="tel:+38-096-111-11-11">
             <svg class="header-tel__icon" >
@@ -29,10 +29,10 @@
    </header>
 
    <!-- Page Main -->
-   <main class="page-main">
+   <main>
 
       <!-- Hero -->
-      <section class="section hero js-hero-section">
+      <section class="section hero">
          <div class="container hero">
             <h1 class="hero-title">
                Лучшая продукция на украинском рынке
@@ -45,8 +45,7 @@
       <section class="section">
          <div class="container products">
             <h2 class="products-title visually-hidden">Наши предложения</h2>
-            <ul class="product-list list js-product-list"></ul>
-            <template id="list-item-template">{{#each items}}{{/each}}</template>
+            <ul class="product-list list"></ul>
          </div>
       </section>
    </main>
@@ -57,12 +56,12 @@
 
          <!-- Contacts -->
          <div class="footer-contacts">
-            <a href="./index.html" class="footer-logo__link"><img class="header-logo__icon"
-                  src="./images/svg/logo-okto-trade-white.svg" alt="Логотип ТД ОКТО ТРЕЙД" aria-label="Логотип ТД ОКТО ТРЕЙД"></a>
+            <a href="./index.html" class="footer-logo__link"><img 
+                  src="./images/svg/logo-okto-trade-white.svg" alt="окто трейд" aria-label="окто трейд"></a>
             
             <!-- Address -->
             <address>
-               <ul class="footer-list list">
+               <ul class="list">
                   <li class="footer-list__item">
                      <a class="footer-address__link-google link" href="https://goo.gl/maps/R6bYdpyuvPCBq6NV9">
                         <span class="footer-address">03117 Украина, Киев,</span>
@@ -90,26 +89,27 @@
          </div>
    
          <!-- Join -->
-         <div class="join">
-            <b class="subtitle">Мы в соцсетях</b>
+         <section class="footer-join">
+            <b class="footer-join__subtitle">Мы в соцсетях</b>
             <ul class="join-set list">
-               <li class="item">
-                  <a class="button" href="" aria-label="инстаграм">
-                     <svg class="icon" width="25" height="25">
+               <li class="join-item">
+                  <a class="join-button" href="" aria-label="инстаграм">
+                     <svg class="join-button__icon">
                         <use href="./images/svg/sprite.svg#icon_instagram"></use>
                      </svg>
                   </a>
                </li>
-               <li class="item">
-                  <a class="button" href="" aria-label="фейсбук">
-                     <svg class="icon" width="25" height="25">
+               <li class="join-item">
+                  <a class="join-button" href="" aria-label="фейсбук">
+                     <svg class="join-button__icon">
                         <use href="./images/svg/sprite.svg#icon_facebook"></use>
                      </svg>
                   </a>
                </li>
             </ul>
-         </div>
+         </section>
       </div>
+      <span class="footer-copyright">ТД ОКТО ТРЕЙД &#169; 2021</span>
    </footer>
 
    <!-- Bg -->

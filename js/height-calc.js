@@ -1,28 +1,30 @@
 const pageHeaderHeight = document.querySelector(".page-header")
    .getBoundingClientRect().height;
-const heroSection = document.querySelector(".js-hero-section");
+const heroSection = document.querySelector(".section.hero");
+const pageFooter = document.querySelector('.page-footer');
 
 let heroHeight = 0;
 
 const setMobHeroHeight = () => {
    if (screen.orientation.type === "portrait-primary" 
+      && window.innerHeight <= 740   
+      && window.innerWidth >= 375 
       && window.innerWidth <= 480 
-      && window.innerHeight <= 740 
-      && window.innerWidth >= 375
    ) {
       heroHeight = window.innerHeight - pageHeaderHeight;
       heroSection.style.minHeight = `${heroHeight}px`;
    };
 };
 
-// const setDescHeroHeight = () => {
-//    if (screen.orientation.type === "landscape-primary"
-//       && window.innerWidth >= 970) {
-//       heroHeight = window.innerHeight - pageHeaderHeight;
-//       heroSection.style.height = `${heroHeight}px`;
-//       heroSection.style.maxHeight = `700px`;
-//    }
-// }
+const setMobFooterHeight = () => {
+   if (screen.orientation.type === "portrait-primary"
+      && window.innerHeight >= 740   
+      && window.innerWidth >= 375 
+      && window.innerWidth <= 480
+   ) {
+      pageFooter.style.minHeight = `auto`;
+   }
+}
 
 setMobHeroHeight();
-// setDescHeroHeight();
+setMobFooterHeight();
