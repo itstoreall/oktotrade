@@ -33,7 +33,8 @@ const productItem = producsContent.reduce((content, item, index) => {
                   <img 
                      class="product-item__img" 
                      src="${item.img_src}"
-                     alt="${item.alt}" />
+                     alt="${item.alt}" 
+                     loading="lazy"/>
                </picture>
 
                <!-- Overlay -->
@@ -47,7 +48,7 @@ const productItem = producsContent.reduce((content, item, index) => {
             <!-- Meta -->
             <div class="product-item__meta">
                <h3 class="product-item__meta-title">${item.meta_title}</h3>
-               <p class="product-item__meta-text">${item.meta_title}</p>
+               <p class="product-item__meta-text">${item.meta_text}</p>
             </div>
          </a>
       </li>`

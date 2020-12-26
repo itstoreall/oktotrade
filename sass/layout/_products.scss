@@ -1,5 +1,17 @@
-// Products
+// Products Title
+.products-title {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-grey-color;
+  }
+}
 
+// Products
 .product-list {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -118,6 +130,13 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    // ...
+
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .product-item__meta-text {
@@ -126,5 +145,12 @@
     font-size: 14px;
     line-height: 1.87;
     color: $secondary-grey-color;
+
+    // ...
+
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
