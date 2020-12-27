@@ -1,7 +1,7 @@
 const pageHeaderHeight = document.querySelector(".page-header")
    .getBoundingClientRect().height;
 const heroSection = document.querySelector(".section.hero");
-const pageFooter = document.querySelector('.page-footer');
+// const pageFooter = document.querySelector('.container.footer');
 
 let heroHeight = 0;
 
@@ -16,15 +16,15 @@ const setMobHeroHeight = () => {
    };
 };
 
-const setMobFooterHeight = () => {
-   if (screen.orientation.type === "portrait-primary"
-      && window.innerHeight >= 740   
-      && window.innerWidth >= 375 
-      && window.innerWidth <= 480
-   ) {
-      pageFooter.style.minHeight = `auto`;
-   }
-}
+// const setMobFooterHeight = () => {
+//    if (screen.orientation.type === "portrait-primary"
+//       && window.innerHeight >= 740   
+//       && window.innerWidth >= 375 
+//       && window.innerWidth <= 480
+//    ) {
+//       pageFooter.style.minHeight = `auto`;
+//    }
+// }
 
 setMobHeroHeight();
-setMobFooterHeight();
+// setMobFooterHeight();
