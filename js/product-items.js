@@ -1,7 +1,10 @@
 export default [
   {
-    // Picture (srcset)
+    // a (href)
+    link: 
+      './ugol.html',
 
+    // Picture (srcset)
     img_450_1x:
       "./images/mobile/product-1-450.jpg 1x",
     img_900_2x:
@@ -16,7 +19,6 @@ export default [
       "./images/desktop/product-1-740.jpg 2x",
     
     // Img (src)
-    
     img_src:
       "./images/desktop/product-1-370.jpg",
     alt:
@@ -33,8 +35,11 @@ export default [
       "Дополнение 01"
   },
   {
+    // a (href)
+    link: 
+      './shlak.html',
+    
     // Picture (srcset)
-
     img_450_1x:
       "./images/mobile/product-2-450.jpg 1x",
     img_900_2x:
@@ -49,7 +54,6 @@ export default [
       "./images/desktop/product-2-740.jpg 2x",
     
     // Img (src)
-    
     img_src:
       "./images/desktop/product-2-370.jpg",
     alt:
@@ -66,8 +70,11 @@ export default [
       "Дополнение 02"
   },
   {
+    // a (href)
+    link: 
+      './shcheben.html',
+    
     // Picture (srcset)
-
     img_450_1x:
       "./images/mobile/product-3-450.jpg 1x",
     img_900_2x:
@@ -82,7 +89,6 @@ export default [
       "./images/desktop/product-3-740.jpg 2x",
     
     // Img (src)
-    
     img_src:
       "./images/desktop/product-3-370.jpg",
     alt:
@@ -99,8 +105,11 @@ export default [
       "Дополнение 03"
   },
   {
+    // a (href)
+    link: 
+      './nefteprodukty-svetlyye.html',
+    
     // Picture (srcset)
-
     img_450_1x:
       "./images/mobile/product-4-450.jpg 1x",
     img_900_2x:
@@ -115,7 +124,6 @@ export default [
       "./images/desktop/product-4-740.jpg 2x",
     
     // Img (src)
-    
     img_src:
       "./images/desktop/product-4-370.jpg",
     alt:
@@ -132,8 +140,11 @@ export default [
       "Дополнение 04"
   },
   {
+    // a (href)
+    link: 
+      './neftekhimiya.html',
+    
     // Picture (srcset)
-
     img_450_1x:
       "./images/mobile/product-5-450.jpg 1x",
     img_900_2x:
@@ -148,7 +159,6 @@ export default [
       "./images/desktop/product-5-740.jpg 2x",
     
     // Img (src)
-    
     img_src:
       "./images/desktop/product-5-370.jpg",
     alt:
@@ -165,8 +175,11 @@ export default [
       "Дополнение 05"
   },
   {
+    // a (href)
+    link: 
+      './maslo-bazovoye.html',
+    
     // Picture (srcset)
-
     img_450_1x:
       "./images/mobile/product-6-450.jpg 1x",
     img_900_2x:
@@ -181,7 +194,6 @@ export default [
       "./images/desktop/product-6-740.jpg 2x",
     
     // Img (src)
-    
     img_src:
       "./images/desktop/product-6-370.jpg",
     alt:
