@@ -742,6 +742,10 @@ button {
   }
 }
 
+.page-footer .footer-content__wrap:nth-child(1) .footer-nav > li > .current {
+  color: aquamarine;
+}
+
 @media screen and (orientation: portrait) and (min-width: 768px) {
   .page-footer .footer-content__wrap:nth-child(2) {
     width: 50%;

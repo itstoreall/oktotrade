@@ -109,6 +109,10 @@
           font-size: 24px;
         }
       }
+
+      & > li > .current {
+        color: aquamarine;
+      }
     }
   }
 

@@ -1,7 +1,4 @@
-import productItem from "./product-markup.js";
-
-const refs = {
-   gallery: document.querySelector('.product-list')
-};
+import refs from './refs.js';
+import productItem from './product-markup.js';
 
 refs.gallery.insertAdjacentHTML("beforeend", productItem);
