@@ -10,24 +10,31 @@ const markupRender = (href) => {
    switch(href) {
       case "/ugol.html":
          linkHandler('.ugol');
+         console.log("1", href);
          break;
       case "/shlak.html":
+         console.log("2", href);
          linkHandler('.shlak');
          break;
       case "/shcheben.html":
+         console.log("3", href);
          linkHandler('.shcheben');
          break;
       case "/nefteprodukty-svetlyye.html":
+         console.log("4", href);
          linkHandler('.neft-svet');
          break;
       case "/neftekhimiya.html":
+         console.log("5", href);
          linkHandler('.neftekhimiya');
          break;
       case "/maslo-bazovoye.html":
+         console.log("6", href);
          linkHandler('.maslo-baz');
          break;
       default:
          linkHandler('home-page');
+         console.log("0", href);
          break;
    };
 };
