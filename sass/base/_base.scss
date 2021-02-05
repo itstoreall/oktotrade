@@ -19,24 +19,6 @@ body {
   background-color: $primary-black-color;
 }
 
-.background {
-  position: fixed;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100vh;
-
-  background-image: url("../images/bg/bg-img-001-mob.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  // background-attachment: fixed;
-
-  @media screen and (min-width: 768px) {
-    background-image: url("../images/bg/bg-img-001.jpg");
-  }
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;

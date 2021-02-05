@@ -22,7 +22,7 @@ export default [
     productLink_04:
       "./nefteprodukty-svetlyye.html",
     productName_04: 
-      "Нефтепродукты светлые",
+      "Нефтепродукты",
     
     // Info link 05
     productLink_05:

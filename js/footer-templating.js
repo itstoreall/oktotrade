@@ -1,33 +1,45 @@
 import refs from './refs.js';
 import footerMarkup from './footer-markup.js';
 
+// Inserts Markup into the DOM
 refs.footerContainer.insertAdjacentHTML("beforeend", footerMarkup);
 
+// Assigns a class to the carrent page link
 const markupRender = (href) => {
 
    switch(href) {
       case "/ugol.html":
-         document.querySelector('a#footer-nav_link-01').classList.add('current');
+         linkHandler('.ugol');
          break;
       case "/shlak.html":
-         document.querySelector('a#footer-nav_link-02').classList.add('current');
+         linkHandler('.shlak');
          break;
       case "/shcheben.html":
-         document.querySelector('a#footer-nav_link-03').classList.add('current');
+         linkHandler('.shcheben');
          break;
       case "/nefteprodukty-svetlyye.html":
-         document.querySelector('a#footer-nav_link-04').classList.add('current');
+         linkHandler('.neft-svet');
          break;
       case "/neftekhimiya.html":
-         document.querySelector('a#footer-nav_link-05').classList.add('current');
+         linkHandler('.neftekhimiya');
          break;
       case "/maslo-bazovoye.html":
-         document.querySelector('a#footer-nav_link-06').classList.add('current');
+         linkHandler('.maslo-baz');
          break;
       default:
+         linkHandler('home-page');
          break;
    };
 };
 
-markupRender(window.location.pathname);
+// Current class toggle
+const linkHandler = (currentClass) => {
+   const links = document.querySelector(`.footer-nav_link`);
+   const currentLink = document.querySelector(`.footer-nav_link${currentClass}`);
 
+   currentClass !== 'home-page'
+      ? currentLink.classList.add('current')
+      : links.classList.remove('current');
+};
+   
+markupRender(window.location.pathname);

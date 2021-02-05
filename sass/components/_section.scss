@@ -1,119 +1,56 @@
-// Section
+// ================== Section ==================
 
 .section {
   width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 
-// Sectin Hero
-
+// Section Hero
 .section.hero {
   width: 100%;
   padding-top: 25px;
   padding-bottom: 40px;
   background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.8),
-    rgba(47, 48, 58, 0.8)
-  );
-  //   url("../images/hero/hero-bg-01-mob.jpg");
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: top;
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../images/hero/hero-bg-01-414.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   @media screen and (min-width: 768px) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 90px;
+    padding-bottom: 110px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../images/hero/hero-bg-01-768.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  @media screen and (min-width: 1024px) {
+    padding-top: 120px;
+    padding-bottom: 140px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../images/hero/hero-bg-01-1440.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
-// .section.copyright {
-//   padding: 0px;
-// }
-
-// @media scre  en and (min-device-pixel-ratio: 2),
-//   screen and (min-resolution: 192dpi),
-//   screen and (min-resolution: 2dppx) {
-//   .hero-section {
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(47, 48, 58, 0.8),
-//         rgba(47, 48, 58, 0.8)
-//       ),
-//       url("../images/bg/bg-img-01.jpg");
-//   }
-// }
-
-// Media 768px
-
-// @media screen and (min-width: 481px) {
-//   .hero-section {
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(47, 48, 58, 0.8),
-//         rgba(47, 48, 58, 0.8)
-//       ),
-//       url("../images/bg/bg-img-01.jpg");
-//   }
-
-//   @media screen and (min-device-pixel-ratio: 2),
-//     screen and (min-resolution: 192dpi),
-//     screen and (min-resolution: 2dppx) {
-//     .hero-section {
-//       background-image: linear-gradient(
-//           to right,
-//           rgba(47, 48, 58, 0.8),
-//           rgba(47, 48, 58, 0.8)
-//         ),
-//         url("../images/bg/bg-img-01.jpg");
-//     }
-//   }
-// }
-
-// Media 1200px
-
-// @media screen and (min-width: 769px) {
-//   .hero-section {
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(47, 48, 58, 0.8),
-//         rgba(47, 48, 58, 0.8)
-//       ),
-//       url("../images/bg/bg-img-01.jpg");
-//   }
-
-//   @media screen and (min-device-pixel-ratio: 2),
-//     screen and (min-resolution: 192dpi),
-//     screen and (min-resolution: 2dppx) {
-//     .hero-section {
-//       background-image: linear-gradient(
-//           to right,
-//           rgba(47, 48, 58, 0.8),
-//           rgba(47, 48, 58, 0.8)
-//         ),
-//         url("../images/bg/bg-img-01.jpg");
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 1199px) {
-//   .hero-section {
-//     padding-top: 118px;
-//     padding-bottom: 118px;
-//   }
-// }
-
-// @media screen and (min-width: 1200px) {
-//   .hero-section {
-//     max-width: 1600px;
-//     padding-top: 200px;
-//     padding-bottom: 200px;
-//     margin: 0 auto;
-//   }
-// }
+// Section Article
+.section.article {
+  background-color: $primary-white-color;
+}

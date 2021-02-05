@@ -15,12 +15,12 @@ const footerMarkup = footerContent.reduce((content, item) => {
          <nav>
             <b class="footer-subtitle">Информация</b>
             <ul class="footer-nav">
-               <li><a id="footer-nav_link-01" href="${item.productLink_01}">${item.productName_01}</a></li>
-               <li><a id="footer-nav_link-02" href="${item.productLink_02}">${item.productName_02}</a></li>
-               <li><a id="footer-nav_link-03" href="${item.productLink_03}">${item.productName_03}</a></li>
-               <li><a id="footer-nav_link-04" href="${item.productLink_04}">${item.productName_04}</a></li>
-               <li><a id="footer-nav_link-05" href="${item.productLink_05}">${item.productName_05}</a></li>
-               <li><a id="footer-nav_link-06" href="${item.productLink_06}">${item.productName_06}</a></li>
+               <li><a class="footer-nav_link ugol" href="${item.productLink_01}">${item.productName_01}</a></li>
+               <li><a class="footer-nav_link shlak" href="${item.productLink_02}">${item.productName_02}</a></li>
+               <li><a class="footer-nav_link shcheben" href="${item.productLink_03}">${item.productName_03}</a></li>
+               <li><a class="footer-nav_link neft-svet" href="${item.productLink_04}">${item.productName_04}</a></li>
+               <li><a class="footer-nav_link neftekhimiya" href="${item.productLink_05}">${item.productName_05}</a></li>
+               <li><a class="footer-nav_link maslo-baz" href="${item.productLink_06}">${item.productName_06}</a></li>
             </ul>
          </nav>
       </div>
