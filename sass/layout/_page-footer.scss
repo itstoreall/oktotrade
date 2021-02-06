@@ -29,6 +29,10 @@
   .footer-address a {
     display: inline-block;
     color: $accent-text-color-lighter;
+
+    &:hover {
+      color: $primary-white-text-color;
+    }
   }
 
   // ========================================== Content Wrap (1)
@@ -145,7 +149,7 @@
       }
 
       & li:not(:first-child) .footer-address__link {
-        display: flex;
+        display: inline-flex;
         align-items: baseline;
       }
 
