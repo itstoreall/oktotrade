@@ -680,7 +680,7 @@ button {
 
 .page-footer .footer-nav a,
 .page-footer .footer-address a {
-  display: block;
+  display: inline-block;
   color: #ce9c71;
 }
 
@@ -815,10 +815,6 @@ button {
   margin-bottom: 15px;
 }
 
-.page-footer .footer-content__wrap:nth-child(2) .footer-address li .footer-address__link {
-  display: inline-block;
-}
-
 .page-footer .footer-content__wrap:nth-child(2) .footer-address li:not(:first-child) .footer-address__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -826,10 +822,6 @@ button {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.page-footer .footer-content__wrap:nth-child(2) .footer-address .google-map {
-  display: inline-block;
 }
 
 .page-footer .footer-content__wrap:nth-child(2) .footer-address .google-map span:nth-child(1) {

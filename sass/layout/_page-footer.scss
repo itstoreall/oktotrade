@@ -1,4 +1,5 @@
-// ========================================== Page Footer
+// ================== Page Footer ==================
+
 .page-footer {
   background-color: $footer-bg-color;
 
@@ -26,11 +27,11 @@
   // a *
   .footer-nav a,
   .footer-address a {
-    display: block;
+    display: inline-block;
     color: $accent-text-color-lighter;
   }
 
-  // ========================================== Content Wrap 1
+  // ========================================== Content Wrap (1)
   .footer-content__wrap:nth-child(1) {
     @media screen and (orientation: portrait) {
       @media screen and (min-width: 768px) {
@@ -143,18 +144,12 @@
         margin-bottom: 15px;
       }
 
-      & li .footer-address__link {
-        display: inline-block;
-      }
-
       & li:not(:first-child) .footer-address__link {
         display: flex;
         align-items: baseline;
       }
 
       .google-map {
-        display: inline-block;
-
         & span:nth-child(1) {
           margin-bottom: 15px;
         }
@@ -224,99 +219,3 @@
     color: $secondary-grey-text-color;
   }
 }
-
-// .footer-address__link-google {
-//   text-decoration: none;
-//   font-style: normal;
-
-//   & .footer-address {
-//     display: block;
-
-//     &:not(:last-child) {
-//       margin-bottom: 14px;
-
-//       @media screen and (min-width: 375px) {
-//         margin-bottom: 10px;
-//       }
-//     }
-//   }
-// }
-
-// .footer-mail__link,
-// .footer-tel__link {
-//   display: flex;
-//   align-items: center;
-
-//   .footer-mail__icon,
-//   .footer-tel__icon {
-//     margin-right: 10px;
-//     height: 18px;
-//     fill: $accent-color-lighter;
-//     @include transition(fill);
-
-//     @media screen and (min-width: 375px) {
-//       height: 20px;
-//     }
-//   }
-// }
-
-// .footer-mail__icon {
-//   padding-top: 3px;
-//   width: 22px;
-// }
-
-// .footer-tel__icon {
-//   width: 20px;
-
-//   @media screen and (min-width: 375px) {
-//     width: 18px;
-//   }
-// }
-
-// // Join
-// .footer-join {
-//   // margin-bottom: 50px;
-
-//   .footer-join__subtitle {
-//     display: block;
-//     font-size: 24px;
-//     margin-bottom: 25px;
-//     color: $secondary-grey-text-color;
-//   }
-
-//   @media screen and (min-width: 414px) {
-//     margin-bottom: 60px;
-//   }
-// }
-
-// .join-set {
-//   display: flex;
-
-//   & > .join-item:not(:last-child) {
-//     margin-right: 20px;
-//   }
-
-//   .join-button {
-//     @include flex();
-//     width: 60px;
-//     height: 60px;
-//     border-radius: 50%;
-//     background-color: rgba(255, 255, 255, 0.1);
-//     background-repeat: no-repeat;
-//     @include transition(background-color);
-
-//     .join-button__icon {
-//       width: 25px;
-//       height: 25px;
-//     }
-//   }
-
-//   & .join-button:hover,
-//   & .join-button:focus {
-//     background-color: $accent-color;
-//   }
-// }
-
-// .copyright {
-//   padding: 0;
-// }
