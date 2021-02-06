@@ -37,7 +37,7 @@ const footerMarkup = footerContent.reduce((content, item) => {
                   </a>
                </li>
                <li>
-                  <a href="mailto:info@example.com">
+                  <a class="footer-address__link" href="mailto:info@example.com">
                      <svg class="address-icon__mail">
                         <use href="./images/svg/sprite.svg#icon_mail"></use>
                      </svg>
@@ -45,7 +45,7 @@ const footerMarkup = footerContent.reduce((content, item) => {
                   </a>
                </li>
                <li>
-                  <a href="tel:+380991111111">
+                  <a class="footer-address__link" href="tel:+380991111111">
                      <svg class="address-icon__tel">
                         <use href="./images/svg/sprite.svg#icon_tel"></use>
                      </svg>

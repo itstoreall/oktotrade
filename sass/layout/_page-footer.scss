@@ -103,6 +103,7 @@
       }
 
       & .footer-nav_link {
+        display: inline-block;
         font-size: 22px;
 
         @media screen and (min-width: 414px) {
@@ -116,7 +117,7 @@
     }
   }
 
-  // ========================================== Content Wrap 2
+  // ========================================== Content Wrap (2)
   .footer-content__wrap:nth-child(2) {
     @media screen and (orientation: portrait) {
       @media screen and (min-width: 768px) {
@@ -142,13 +143,21 @@
         margin-bottom: 15px;
       }
 
-      & li:not(:first-child) a {
+      & li .footer-address__link {
+        display: inline-block;
+      }
+
+      & li:not(:first-child) .footer-address__link {
         display: flex;
         align-items: baseline;
       }
 
-      .google-map span:nth-child(1) {
-        margin-bottom: 15px;
+      .google-map {
+        display: inline-block;
+
+        & span:nth-child(1) {
+          margin-bottom: 15px;
+        }
       }
 
       // dont change the height of svg
