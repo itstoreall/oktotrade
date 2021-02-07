@@ -34,7 +34,7 @@ export default [
     productLink_06:
       "./maslo-bazovoye.html",
     productName_06: 
-      "Масло базовое",
+      "Масло",
     
     // 
   },

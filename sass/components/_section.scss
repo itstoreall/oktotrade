@@ -52,5 +52,10 @@
 
 // Section Article
 .section.article {
+  padding-top: 0;
   background-color: $primary-white-color;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 40px;
+  }
 }

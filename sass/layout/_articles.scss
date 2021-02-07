@@ -1,12 +1,119 @@
 // ================== Articles ==================
 
-.article-title {
+.article-title,
+.article-text,
+.article-list {
+  display: block;
   color: $secondary-black-color;
 }
 
+// Article Hero
+.article-hero {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 1200px;
+  }
+
+  // Thumb
+  .article-hero__thumb {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-right: 50px;
+      min-width: 700px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    // img
+    .article-hero__img {
+      width: 100%;
+    }
+  }
+
+  // Title h1
+  .article-title.h1 {
+    padding-left: 15px;
+    padding-right: 15px;
+    // margin: 0 auto;
+    // max-width: 480px;
+    font-size: 26px;
+
+    @media screen and (min-width: 375px) {
+      font-size: 30px;
+    }
+
+    @media screen and (min-width: 480px) {
+      margin: 0 auto;
+      width: 480px;
+      font-size: 32px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-left: 50px;
+      padding-right: 50px;
+      width: 768px;
+      font-size: 42px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin: auto 0;
+    }
+  }
+}
+
+// Title h2
+.article-title.h2 {
+  margin: auto 0;
+  font-size: 22px;
+
+  @media screen and (min-width: 375px) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+  }
+}
+
+// Text
 .article-text {
-  color: $secondary-black-color;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+
+  @media screen and (min-width: 375px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
 }
 
-// color: $primary-white-text-color;
-//   background-color: $primary-black-color;
+// ul
+.article-list {
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 500;
+  list-style: square;
+
+  @media screen and (min-width: 1200px) {
+    margin: auto 0;
+    max-width: 768px;
+  }
+}
