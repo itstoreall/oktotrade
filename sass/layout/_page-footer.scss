@@ -1,225 +1,485 @@
 // ================== Page Footer ==================
 
+// Subtitle *
+.footer-subtitle {
+  display: block;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 26px;
+  color: $secondary-grey-text-color;
+}
+
+// ul *
+.footer-nav,
+.footer-address__list,
+.footer-join {
+  margin-bottom: 50px;
+}
+
+// a *
+.footer-nav__list a,
+.footer-address__list a {
+  display: inline-block;
+  color: $accent-text-color-lighter;
+  @include transition(color);
+
+  &:hover {
+    color: $primary-white-text-color;
+  }
+}
+
+// -------------------------------------- Page Footer
 .page-footer {
   background-color: $footer-bg-color;
 
-  // Subtitle *
-  .footer-subtitle {
+  // Logo
+  .footer-logo__link {
     display: block;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    margin-bottom: 25px;
-    color: $secondary-grey-text-color;
-
-    @media screen and (min-width: 414px) {
-      font-size: 28px;
-    }
-  }
-
-  // ul *
-  .footer-nav,
-  .footer-address,
-  .footer-join {
     margin-bottom: 50px;
+    opacity: 0.8;
+    width: 200px;
+    @include transition(opacity);
   }
 
-  // a *
-  .footer-nav a,
-  .footer-address a {
-    display: inline-block;
-    color: $accent-text-color-lighter;
+  // Nav links
+  .footer-nav__list {
+    li:not(:last-child) {
+      margin-bottom: 15px;
+    }
 
-    &:hover {
-      color: $primary-white-text-color;
+    // a
+    & .footer-nav__list-link {
+      display: inline-block;
+      font-size: 24px;
+
+      &.current {
+        color: $primary-white-text-color;
+      }
     }
   }
 
-  // ========================================== Content Wrap (1)
-  .footer-content__wrap:nth-child(1) {
-    @media screen and (orientation: portrait) {
-      @media screen and (min-width: 768px) {
-        width: 50%;
+  // Contacts
+  .footer-address__list {
+    & li:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    // li > a
+    & li:not(:first-child) .footer-address__list-link {
+      display: inline-flex;
+      align-items: baseline;
+    }
+
+    // a > span
+    .google-map {
+      & span:nth-child(1) {
+        margin-bottom: 15px;
       }
     }
 
-    @media screen and (orientation: landscape) {
-      width: 50%;
+    // dont change the height of svg
+    & svg {
+      margin-right: 10px;
+      width: 22px;
+      fill: $accent-color-lighter;
+      @include transition(fill);
     }
 
-    @media screen and (min-width: 1024px) {
-      display: flex;
-      align-items: start;
-      width: 60%;
+    // icon
+    .address-icon__mail {
+      height: 14px;
     }
 
-    @media screen and (min-width: 1200px) {
-      width: 70%;
+    // icon
+    .address-icon__tel {
+      height: 17px;
     }
 
-    // ---------------------------------------- logo
-    .footer-logo__link {
+    // * a > span
+    & span {
       display: block;
-      margin-bottom: 50px;
-      opacity: 0.8;
-      @include transition(opacity);
+      font-size: 24px;
+    }
 
-      @media screen and (min-width: 375px) {
-        width: 80%;
-      }
+    // hover
+    .footer-address__list-link:hover > .address-icon__mail,
+    .footer-address__list-link:hover > .address-icon__tel {
+      fill: $primary-white-text-color;
+    }
+  }
 
-      @media screen and (orientation: portrait) {
-        @media screen and (min-width: 768px) {
-          position: absolute;
-          top: 100px;
-          width: 180px;
-        }
+  // Join
+  .footer-join {
+    display: flex;
 
-        @media screen and (min-width: 1024px) {
-          margin-right: 50px;
-        }
-      }
-
-      @media screen and (orientation: landscape) {
-        position: absolute;
-        top: 50px;
-        width: 150px;
-      }
-
-      @media screen and (min-width: 812px) {
-        top: 70px;
-      }
-
-      @media screen and (min-width: 1024px) {
-        position: static;
-        margin-right: 30%;
-        width: 130px;
-      }
+    // button
+    & a {
+      display: block;
+      @include flex();
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      background-repeat: no-repeat;
+      @include transition(background-color);
 
       &:hover {
-        opacity: 1;
+        background-color: $accent-color-bg;
+      }
+
+      &:first-child {
+        margin-right: 20px;
       }
     }
 
-    // ---------------------------------------- Nav
-    .footer-nav {
-      li:not(:last-child) {
-        margin-bottom: 15px;
-      }
-
-      & .footer-nav_link {
-        display: inline-block;
-        font-size: 22px;
-
-        @media screen and (min-width: 414px) {
-          font-size: 24px;
-        }
-
-        &.current {
-          color: $primary-white-text-color;
-        }
-      }
+    // social icon
+    & svg {
+      height: 25px;
+      width: 25px;
     }
-  }
-
-  // ========================================== Content Wrap (2)
-  .footer-content__wrap:nth-child(2) {
-    @media screen and (orientation: portrait) {
-      @media screen and (min-width: 768px) {
-        width: 50%;
-      }
-    }
-
-    @media screen and (orientation: landscape) {
-      width: 50%;
-    }
-
-    @media screen and (min-width: 1024px) {
-      width: 40%;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: 30%;
-    }
-
-    // ---------------------------------------- Address
-    .footer-address {
-      & li:not(:last-child) {
-        margin-bottom: 15px;
-      }
-
-      & li:not(:first-child) .footer-address__link {
-        display: inline-flex;
-        align-items: baseline;
-      }
-
-      .google-map {
-        & span:nth-child(1) {
-          margin-bottom: 15px;
-        }
-      }
-
-      // dont change the height of svg
-      & svg {
-        margin-right: 10px;
-        width: 22px;
-        fill: $accent-color-lighter;
-        @include transition(fill);
-      }
-
-      .address-icon__mail {
-        height: 14px;
-      }
-
-      .address-icon__tel {
-        height: 17px;
-      }
-
-      & span {
-        display: block;
-        font-size: 22px;
-
-        @media screen and (min-width: 414px) {
-          font-size: 24px;
-        }
-      }
-    }
-
-    // ---------------------------------------- Join
-    .footer-join {
-      display: flex;
-
-      @media screen and (orientation: portrait) {
-        @media screen and (min-width: 768px) {
-          margin-bottom: 100px;
-        }
-      }
-
-      & a {
-        display: block;
-        @include flex();
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.1);
-        background-repeat: no-repeat;
-        @include transition(background-color);
-
-        &:first-child {
-          margin-right: 20px;
-        }
-      }
-
-      & svg {
-        height: 25px;
-        width: 25px;
-      }
-    }
-  }
-
-  // ---------------------------------------- Copyright
-  .footer-copyright {
-    font-size: 14px;
-    color: $secondary-grey-text-color;
   }
 }
+
+// =================================== Orientation Portrait
+@media screen and (orientation: portrait) {
+  .page-footer {
+    background-color: $footer-bg-color;
+
+    // <--- [Container] --->
+
+    // * Wraps
+    .footer-content__wrap {
+      @media screen and (min-width: 768px) {
+        width: 350px;
+      }
+    }
+
+    // -------------------------------------- Wrap (1)
+    .footer-content__wrap:nth-child(1) {
+      background-color: rgba(255, 0, 0, 0.075);
+
+      @media screen and (min-width: 768px) {
+        padding-left: 50px;
+      }
+
+      // // Logo
+      // .footer-logo__link {
+      //   display: block;
+      //   margin-bottom: 50px;
+      //   opacity: 0.8;
+      //   width: 200px;
+      //   @include transition(opacity);
+      // }
+
+      // Nav
+      // .footer-nav {
+      //   @media screen and (min-width: 1200px) {
+      //     padding-top: 20px;
+      //   }
+      // }
+    }
+
+    // -------------------------------------- Wrap (2)
+    .footer-content__wrap:nth-child(2) {
+      background-color: rgba(0, 255, 0, 0.068);
+
+      @media screen and (min-width: 768px) {
+        padding-top: 115px;
+        padding-left: 20px;
+      }
+    }
+
+    // -------------------------------------- Copyright
+    .footer-copyright {
+      background-color: rgba(0, 162, 255, 0.089);
+      font-size: 14px;
+      color: $secondary-grey-text-color;
+
+      @media screen and (min-width: 768px) {
+        padding-left: 50px;
+      }
+    }
+  }
+}
+
+// =================================== Orientation landscape
+@media screen and (orientation: landscape) {
+  // * Wraps
+  .footer-content__wrap {
+    padding-left: 100px;
+
+    // @media screen and (min-width: 1200px) {
+    // -------------------------------------- Wrap (1)
+    &:nth-child(1) {
+      background-color: rgba(255, 0, 0, 0.075);
+
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        padding-left: 30px;
+        width: 800px;
+      }
+
+      // Logo
+      .footer-logo__link {
+        margin-right: 200px;
+      }
+    }
+
+    // -------------------------------------- Wrap (1)
+    &:nth-child(2) {
+      background-color: rgba(0, 255, 0, 0.068);
+      width: 350px;
+    }
+  }
+
+  // -------------------------------------- Copyright
+  .footer-copyright {
+    background-color: rgba(0, 162, 255, 0.089);
+  }
+}
+// }
+
+// =================================
+
+// .page-footer {
+//   background-color: $footer-bg-color;
+
+//   // Subtitle *
+//   .footer-subtitle {
+//     display: block;
+//     font-size: 24px;
+//     font-style: normal;
+//     font-weight: 600;
+//     margin-bottom: 25px;
+//     color: $secondary-grey-text-color;
+
+//     @media screen and (min-width: 414px) {
+//       font-size: 24px;
+//     }
+//   }
+
+//   // ul *
+//   .footer-nav__list,
+//   .footer-address__list,
+//   .footer-join {
+//     margin-bottom: 50px;
+//   }
+
+//   // a *
+//   .footer-nav__list a,
+//   .footer-address__list a {
+//     display: inline-block;
+//     color: $accent-text-color-lighter;
+//     @include transition(color);
+
+//     &:hover {
+//       color: $primary-white-text-color;
+//     }
+//   }
+
+//   // ========================================== Content Wrap (1)
+//   .footer-content__wrap:nth-child(1) {
+//     @media screen and (orientation: portrait) {
+//       @media screen and (min-width: 768px) {
+//         width: 50%;
+//       }
+//     }
+
+//     @media screen and (orientation: landscape) {
+//       width: 50%;
+//     }
+
+//     @media screen and (min-width: 1024px) {
+//       display: flex;
+//       align-items: start;
+//       width: 60%;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//       width: 70%;
+//     }
+
+//     // ---------------------------------------- logo
+//     .footer-logo__link {
+//       display: block;
+//       margin-bottom: 50px;
+//       opacity: 0.8;
+//       width: 200px;
+//       @include transition(opacity);
+
+//       // @media screen and (min-width: 375px) {
+//       //   // width: 80%;
+//       // }
+
+//       @media screen and (orientation: portrait) {
+//         @media screen and (min-width: 768px) {
+//           position: absolute;
+//           top: 100px;
+//           width: 180px;
+//         }
+
+//         @media screen and (min-width: 1024px) {
+//           margin-right: 50px;
+//         }
+//       }
+
+//       @media screen and (orientation: landscape) {
+//         position: absolute;
+//         top: 50px;
+//         width: 150px;
+//       }
+
+//       @media screen and (min-width: 812px) {
+//         top: 70px;
+//       }
+
+//       @media screen and (min-width: 1024px) {
+//         position: static;
+//         margin-right: 30%;
+//         width: 130px;
+//       }
+
+//       &:hover {
+//         opacity: 1;
+//       }
+//     }
+
+//     // ---------------------------------------- Nav
+//     .footer-nav {
+//       @media screen and (min-width: 1200px) {
+//         padding-top: 20px;
+//       }
+//     }
+
+//     // ul
+//     .footer-nav__list {
+//       li:not(:last-child) {
+//         margin-bottom: 15px;
+//       }
+
+//       & .footer-nav__list_link {
+//         display: inline-block;
+//         font-size: 22px;
+
+//         @media screen and (min-width: 414px) {
+//           font-size: 22px;
+//         }
+
+//         &.current {
+//           color: $primary-white-text-color;
+//         }
+//       }
+//     }
+//   }
+
+//   // ========================================== Content Wrap (2)
+//   .footer-content__wrap:nth-child(2) {
+//     @media screen and (orientation: portrait) {
+//       @media screen and (min-width: 768px) {
+//         width: 50%;
+//       }
+//     }
+
+//     @media screen and (orientation: landscape) {
+//       width: 50%;
+//     }
+
+//     @media screen and (min-width: 1024px) {
+//       width: 40%;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//       width: 30%;
+//     }
+
+//     // ---------------------------------------- Address
+//     .footer-address__list {
+//       & li:not(:last-child) {
+//         margin-bottom: 15px;
+//       }
+
+//       & li:not(:first-child) .footer-address__list-link {
+//         display: inline-flex;
+//         align-items: baseline;
+//       }
+
+//       .google-map {
+//         & span:nth-child(1) {
+//           margin-bottom: 15px;
+//         }
+//       }
+
+//       // dont change the height of svg
+//       & svg {
+//         margin-right: 10px;
+//         width: 22px;
+//         fill: $accent-color-lighter;
+//         @include transition(fill);
+//       }
+
+//       .address-icon__mail {
+//         height: 14px;
+//       }
+
+//       .address-icon__tel {
+//         height: 17px;
+//       }
+
+//       & span {
+//         display: block;
+//         font-size: 22px;
+
+//         @media screen and (min-width: 414px) {
+//           font-size: 24px;
+//         }
+//       }
+
+//       .footer-address__list-link:hover > .address-icon__mail,
+//       .footer-address__list-link:hover > .address-icon__tel {
+//         fill: $primary-white-text-color;
+//       }
+//     }
+
+//     // ---------------------------------------- Join
+//     .footer-join {
+//       display: flex;
+
+//       @media screen and (orientation: portrait) {
+//         @media screen and (min-width: 768px) {
+//           margin-bottom: 100px;
+//         }
+//       }
+
+//       & a {
+//         display: block;
+//         @include flex();
+//         width: 60px;
+//         height: 60px;
+//         border-radius: 50%;
+//         background-color: rgba(255, 255, 255, 0.2);
+//         background-repeat: no-repeat;
+//         @include transition(background-color);
+
+//         &:hover {
+//           background-color: $accent-color-bg;
+//         }
+
+//         &:first-child {
+//           margin-right: 20px;
+//         }
+//       }
+
+//       & svg {
+//         height: 25px;
+//         width: 25px;
+//       }
+//     }
+//   }
+
+//   // ---------------------------------------- Copyright
+//   .footer-copyright {
+//     font-size: 14px;
+//     color: $secondary-grey-text-color;
+//   }
+// }

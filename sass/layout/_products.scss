@@ -72,7 +72,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    background-color: $accent-color;
+    background-color: $accent-color-bg;
 
     transform: translateY(100%);
     transition: transform 250ms $timing-function, opacity 250ms $timing-function;
@@ -143,7 +143,7 @@
     margin-bottom: 0;
     font-size: 14px;
     line-height: 1.87;
-    color: $secondary-grey-color;
+    color: $secondary-grey-text-color;
 
     // ...
 
