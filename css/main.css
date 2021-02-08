@@ -378,15 +378,60 @@ button {
   }
 }
 
-@media screen and (min-width: 1200px) and (orientation: landscape) {
+@media screen and (orientation: landscape) {
+  .container.footer {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 666px) {
+  .container.footer {
+    padding-left: 80px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 667px) {
   .container.footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 30px;
+    width: 667px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 667px) and (max-width: 1199px) {
+  .container.footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 768px) {
+  .container.footer {
+    width: 768px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 812px) {
+  .container.footer {
+    width: 812px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1024px) {
+  .container.footer {
+    width: 1024px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1200px) {
+  .container.footer {
+    padding-left: 60px;
+    width: 1200px;
   }
 }
 
@@ -884,21 +929,9 @@ button {
   }
 }
 
-@media screen and (orientation: portrait) {
-  .page-footer .footer-content__wrap:nth-child(1) {
-    background-color: rgba(255, 0, 0, 0.075);
-  }
-}
-
 @media screen and (orientation: portrait) and (min-width: 768px) {
   .page-footer .footer-content__wrap:nth-child(1) {
     padding-left: 50px;
-  }
-}
-
-@media screen and (orientation: portrait) {
-  .page-footer .footer-content__wrap:nth-child(2) {
-    background-color: rgba(0, 255, 0, 0.068);
   }
 }
 
@@ -911,7 +944,6 @@ button {
 
 @media screen and (orientation: portrait) {
   .page-footer .footer-copyright {
-    background-color: rgba(0, 162, 255, 0.089);
     font-size: 14px;
     color: #818181;
   }
@@ -923,35 +955,144 @@ button {
   }
 }
 
-@media screen and (orientation: landscape) {
-  .footer-content__wrap {
-    padding-left: 100px;
-  }
-  .footer-content__wrap:nth-child(1) {
-    background-color: rgba(255, 0, 0, 0.075);
+@media screen and (orientation: landscape) and (min-width: 667px) {
+  .footer-content__wrap .footer-subtitle {
+    font-size: 20px;
   }
 }
 
-@media screen and (orientation: landscape) and (min-width: 1200px) {
+@media screen and (orientation: landscape) and (min-width: 736px) {
+  .footer-content__wrap .footer-subtitle {
+    font-size: 22px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 667px) {
   .footer-content__wrap:nth-child(1) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 30px;
-    width: 800px;
   }
 }
 
 @media screen and (orientation: landscape) {
   .footer-content__wrap:nth-child(1) .footer-logo__link {
-    margin-right: 200px;
+    width: 200px;
   }
+}
+
+@media screen and (orientation: landscape) and (min-width: 667px) {
+  .footer-content__wrap:nth-child(1) .footer-logo__link {
+    margin-right: 50px;
+    width: 140px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 736px) {
+  .footer-content__wrap:nth-child(1) .footer-logo__link {
+    margin-right: 50px;
+    width: 160px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 812px) {
+  .footer-content__wrap:nth-child(1) .footer-logo__link {
+    margin-right: 80px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1024px) {
+  .footer-content__wrap:nth-child(1) .footer-logo__link {
+    margin-right: 180px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1200px) {
+  .footer-content__wrap:nth-child(1) .footer-logo__link {
+    margin-right: 250px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 667px) {
+  .footer-content__wrap:nth-child(1) .footer-nav__list a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 736px) {
+  .footer-content__wrap:nth-child(1) .footer-nav__list a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 667px) {
   .footer-content__wrap:nth-child(2) {
-    background-color: rgba(0, 255, 0, 0.068);
-    width: 350px;
+    padding-left: 50px;
   }
+  .footer-content__wrap:nth-child(2) .footer-address__list {
+    margin-bottom: 30px;
+  }
+  .footer-content__wrap:nth-child(2) .footer-address__list-link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .footer-content__wrap:nth-child(2) .google-map span,
+  .footer-content__wrap:nth-child(2) .footer-address__list-link span {
+    font-size: 18px;
+  }
+  .footer-content__wrap:nth-child(2) .address-icon__mail {
+    height: 12px;
+  }
+  .footer-content__wrap:nth-child(2) .address-icon__tel {
+    height: 15px;
+  }
+  .footer-content__wrap:nth-child(2) .footer-address__list-link svg {
+    margin-right: 10px;
+    width: 18px;
+    fill: #78b7dd;
+    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 736px) {
+  .footer-content__wrap:nth-child(2) .google-map span,
+  .footer-content__wrap:nth-child(2) .footer-address__list-link span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 812px) {
+  .footer-content__wrap:nth-child(2) {
+    padding-left: 80px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1024px) {
+  .footer-content__wrap:nth-child(2) {
+    padding-left: 160px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1200px) {
+  .footer-content__wrap:nth-child(2) {
+    padding-left: 210px;
+  }
+}
+
+@media screen and (orientation: landscape) {
   .footer-copyright {
-    background-color: rgba(0, 162, 255, 0.089);
+    color: #818181;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 667px) {
+  .footer-copyright {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=main.css.map */

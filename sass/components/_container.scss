@@ -82,6 +82,7 @@
 
 // -------------------------- Container Footer
 .container.footer {
+  // Portrait
   @media screen and (orientation: portrait) {
     position: relative;
     padding-top: 60px;
@@ -95,63 +96,40 @@
     }
   }
 
-  @media screen and (min-width: 1200px) and (orientation: landscape) {
-    display: flex;
-    flex-wrap: wrap;
+  // Landscape
+  @media screen and (orientation: landscape) {
     padding-top: 60px;
     padding-bottom: 30px;
+
+    @media screen and (max-width: 666px) {
+      padding-left: 80px;
+    }
+
+    @media screen and (min-width: 667px) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 667px;
+
+      @media screen and (max-width: 1199px) {
+        justify-content: center;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+
+    @media screen and (min-width: 812px) {
+      width: 812px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 1024px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-left: 60px;
+      width: 1200px;
+    }
   }
 }
-
-// @media screen and (min-width: 414px) {
-//   padding-top: 80px;
-// }
-
-// @media screen and (orientation: portrait) {
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     flex-wrap: wrap;
-//     padding-top: 220px;
-//     padding-left: 90px;
-//   }
-
-//   @media screen and (min-width: 1024px) {
-//     padding-top: 50px;
-//     padding-left: 50px;
-//     padding-right: 50px;
-//     padding-bottom: 50px;
-//     width: 100%;
-//   }
-// }
-
-//   @media screen and (orientation: landscape) {
-//     display: flex;
-//     flex-wrap: wrap;
-//     padding-top: 140px;
-//     padding-left: 50px;
-//     padding-right: 30px;
-//     padding-bottom: 20px;
-//     width: 100%;
-
-//     @media screen and (min-width: 667px) {
-//       padding-left: 70px;
-//     }
-
-//     @media screen and (min-width: 812px) {
-//       padding-top: 160px;
-//       padding-left: 100px;
-//       // flex-wrap: nowrap;
-//     }
-
-//     @media screen and (min-width: 1024px) {
-//       padding-top: 50px;
-//       padding-left: 50px;
-//       padding-right: 50px;
-//       padding-bottom: 50px;
-//     }
-
-//     @media screen and (min-width: 1200px) {
-//       width: 1200px;
-//     }
-//   }
-// }
