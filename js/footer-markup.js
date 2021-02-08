@@ -59,14 +59,14 @@ const footerMarkup = footerContent.reduce((content, item) => {
             <b class="footer-subtitle">Мы в соцсетях</b>
             <ul class="footer-join">
                <li>
-                  <a href="" aria-label="инстаграм">
+                  <a href="#" aria-label="инстаграм">
                      <svg>
                         <use href="./images/svg/sprite.svg#icon_instagram"></use>
                      </svg>
                   </a>
                </li>
                <li>
-                  <a href="" aria-label="фейсбук">
+                  <a href="#" aria-label="фейсбук">
                      <svg>
                         <use href="./images/svg/sprite.svg#icon_facebook"></use>
                      </svg>
