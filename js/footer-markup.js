@@ -33,14 +33,16 @@ const footerMarkup = footerContent.reduce((content, item) => {
                   <a class="google-map" href="https://goo.gl/maps/R6bYdpyuvPCBq6NV9">
                      <span>03117 Украина, Киев,</span>
                      <span>ул. Грушевского, 5</span>
+                     <span>03117 Украина, Киев,</span>
+                     <span>ул. Грушевского, 5</span>
                   </a>
                </li>
                <li>
-                  <a class="footer-address__list-link" href="mailto:info@example.com">
+                  <a class="footer-address__list-link" href="mailto:tdoktotreid@gmail.com">
                      <svg class="address-icon__mail">
                         <use href="./images/svg/sprite.svg#icon_mail"></use>
                      </svg>
-                     <span>info@example.com</span>
+                     <span>tdoktotreid@gmail.com</span>
                   </a>
                </li>
                <li>

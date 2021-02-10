@@ -73,7 +73,7 @@
 
     // a > span
     .google-map {
-      & span:nth-child(1) {
+      & span:not(:last-child) {
         margin-bottom: 15px;
       }
     }
